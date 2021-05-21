@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>
+    //if current json file != json file, refresh page.
+      var previous = null;
+      var current = null;
+      setInterval(function() {
+          $.getJSON("messages.json", function(json) {
+              current = JSON.stringify(json);            
+              if (previous && current && previous !== current) {
+                  console.log('refresh');
+                  location.reload();
+              }
+              previous = current;
+          });    
+          //set the time. 1000=1s                   
+      }, 10000);   
+  </script>
+  
+<head>
+  <meta charset="utf-8">
+  <title>The Signs of Time</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<script src="getData.js"></script>
+<body>
+  <h1>The Signs of Time: 2019 Hong Kong Anti-Extradition Bill Protest Comment Board</h1>
+  <div id="map"></div>
+  <script src="script.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfH3Tk2kz1nP55P2EXjBSzt412JBrpgEg&map_ids=f67594aa4cef32ea&callback=initMap">
+  </script>
+  <div id="jsonData_title">⇩Message board⇩</div>
+   <h3 id="from_title">Write some Meesage!</h3>
+  <object id="from_container"data="from.html"></object>
+  <div id="messageData"></div>
+
+
+</body>
+
+</html>
