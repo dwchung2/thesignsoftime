@@ -1,0 +1,104 @@
+#from_title{
+ text-align: center;
+}
+form {
+  width: 300px;
+  padding-right:100px ;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 240px;
+  text-align: left;
+  padding-left: 40px;
+}
+button{
+
+  float: right;
+
+}
+ input {
+  float: right;
+  padding-right: 10px;
+}
+
+html{
+    box-sizing:border-box;
+    font-size:100%;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: #000000;
+    color:#fff;
+}
+h1{
+    font-family: "Montserrat", sans-serif;
+    text-align:center;
+    font-size:2rem;
+    padding:0 3rem;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+#map{
+    height: 70vh;
+}
+
+.gm-style-iw-d{
+  color:#000000;
+}
+
+#title{
+font-family: "Montserrat", sans-serif;
+text-align: center;
+font-size:30px;
+}
+#description{
+  font-family: "Montserrat", sans-serif;
+  font-size:14px;
+  text-align: center;
+}
+#infoImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  height:450px;
+}
+
+#from_container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#jsonData_container{
+  text-align: center;
+}
+
+#jsonData_title{
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+#jsonData_name{
+
+}
+
+#jsonData_message{
+
+}
